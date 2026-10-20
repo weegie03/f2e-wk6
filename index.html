@@ -1,88 +1,72 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vegetables</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta name="description" content="Fresh vegetables, growing tips, and seasonal inspiration.">
+  <title>Vegetables | Fresh from the garden</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="container">
-    <!-- 頂部標題與按鈕 -->
-    <header class="header">
-      <h1 class="logo">Vegetables</h1>
-      <div class="user-actions">
-        <span class="social">f</span>
-        <span class="social">📷</span>
-        <button class="btn-outline">LOGIN</button>
-        <button class="btn-outline">JOIN</button>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-row">
+        <a class="wordmark" href="#" aria-label="Vegetables home">Vegetables</a>
+        <div class="account-links" aria-label="Social media and account links">
+          <a class="social-icon facebook" href="#" aria-label="Facebook">f</a>
+          <a class="social-icon instagram" href="#" aria-label="Instagram"><span></span></a>
+          <span class="link-divider" aria-hidden="true"></span>
+          <a class="small-button" href="#">Login</a>
+          <a class="small-button" href="#">Join</a>
+        </div>
       </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Vegetables</a>
+        <a href="#">Online</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
 
-    <!-- 導覽列 -->
-    <nav class="navbar">
-      <a href="#" class="nav-item">Home</a>
-      <a href="#" class="nav-item">About Us</a>
-      <a href="#" class="nav-item">Vegetables</a>
-      <a href="#" class="nav-item">Online</a>
-      <a href="#" class="nav-item">Contact</a>
-    </nav>
+    <main>
+      <div class="hero" role="img" aria-label="Fresh yellow squash and pumpkins at the market"></div>
 
-    <!-- 主大圖 (改為 banner.png) -->
-    <section class="banner">
-      <img src="images/banner.png" alt="Pumpkins">
-    </section>
+      <div class="content-grid">
+        <section class="vegetables-section" aria-labelledby="vegetables-heading">
+          <h1 class="section-heading" id="vegetables-heading">Vegetables</h1>
+          <div class="vegetable-cards">
+            <article class="vegetable-card">
+              <img src="images/carrot.png" alt="Fresh carrots ready to eat">
+              <p>Carrots are crunchy, sweet root vegetables that bring vibrant color to every meal. Packed with beta-carotene, dietary fiber, and essential vitamins, they are perfect for raw snacking, fresh salads, or hearty homemade soups.</p>
+            </article>
+            <article class="vegetable-card">
+              <img src="images/corn.png" alt="Golden ears of sweet corn">
+              <p>Sweet corn provides a deliciously juicy flavor and natural energy. Packed with whole-grain goodness, fiber, and lutein, it is great when grilled on the cob, roasted with herbs, or tossed into fresh garden salads.</p>
+            </article>
+            <article class="vegetable-card">
+              <img src="images/pepper.png" alt="Colorful fresh bell peppers">
+              <p>Crisp and refreshing, sweet bell peppers add a delightful crunch and color to any dish. Naturally rich in vitamin C, vitamin A, and antioxidants, they bring vibrant brightness and nutrition to stir-fries and fresh wraps.</p>
+            </article>
+          </div>
+        </section>
 
-    <!-- 雙欄內容 -->
-    <main class="content-row">
-      <!-- 左欄：蔬菜產品卡片 -->
-      <section class="card-box">
-        <div class="card-header">Vegetables</div>
-        <div class="card-body veg-gallery">
-          <div class="veg-item">
-            <img src="images/carrot.png" alt="Carrots">
-            <p>Carrots are crunchy, sweet root vegetables that bring vibrant color to every meal. Packed with beta-carotene, dietary fiber, and essential vitamins, they are perfect for raw snacking, fresh salads, or hearty homemade soups.</p>
+        <section class="contact-section" aria-labelledby="contact-heading">
+          <h2 class="section-heading" id="contact-heading">Contact</h2>
+          <div class="contact-copy">
+            <p>Have questions or suggestions about Vegetables, Vegetables Club or your online order? You can easily contact Vegetables Customer Service by phone, email or post and we'll be happy to help. We are always dedicated to delivering fresh, healthy, and organic greens right to your kitchen table every single day. Whether you need expert culinary advice on seasonal harvest recipes, bulk ordering options for special events, or flexible assistance with your weekly delivery schedule, our passionate support team is here to guide you every step of the way.</p>
+            <p>We believe that sustainable eating should be transparent, accessible, and exciting for every household. Our local farming partners work tirelessly to harvest all produce at peak freshness, ensuring you receive peak nutritional value in every seasonal box. If you ever experience any issues with order tracking, vegetable freshness, or membership renewals, please do not hesitate to reach out right away. Connect with our growing green community today, explore new plant-based ideas, and let us make your healthy lifestyle enjoyable, vibrant, and completely hassle-free. We always look forward to hearing from you and serving your family!</p>
+            <address>
+              <span>E-mail : Vegetables@aaabbccc.com</span>
+              <span>PHONE : +886-123-456-789</span>
+            </address>
           </div>
-          <div class="veg-item">
-            <img src="images/corn.png" alt="Corn">
-            <p>Sweet corn provides a deliciously juicy flavor and natural energy. Packed with whole-grain goodness, fiber, and lutein, it is great when grilled on the cob, roasted with herbs, or tossed into fresh garden salads.</p>
-          </div>
-          <div class="veg-item">
-            <img src="images/pepper.png" alt="Bell Peppers">
-            <p>Crisp and refreshing, sweet bell peppers add a delightful crunch and color to any dish. Naturally rich in vitamin C, vitamin A, and antioxidants, they bring vibrant brightness and nutrition to stir-fries and fresh wraps.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 右欄：Contact 聯絡卡片 -->
-      <section class="card-box">
-        <div class="card-header">Contact</div>
-        <div class="card-body contact-body">
-          <p class="contact-text">
-            Have questions or suggestions about Vegetables, Vegetables Club or your online order? You can easily contact Vegetables Customer Service by phone, email or post and we'll be happy to help. We are always dedicated to delivering fresh, healthy, and organic greens right to your kitchen table every single day. Whether you need expert culinary advice on seasonal harvest recipes, bulk ordering options for special events, or flexible assistance with your weekly delivery schedule, our passionate support team is here to guide you every step of the way. 
-            <br><br>
-            We believe that sustainable eating should be transparent, accessible, and exciting for every household. Our local farming partners work tirelessly to harvest all produce at peak freshness, ensuring you receive peak nutritional value in every seasonal box. If you ever experience any issues with order tracking, vegetable freshness, or membership renewals, please do not hesitate to reach out right away. Connect with our growing green community today, explore new plant-based ideas, and let us make your healthy lifestyle enjoyable, vibrant, and completely hassle-free. We always look forward to hearing from you and serving your family!
-          </p>
-          
-          <div class="contact-divider"></div>
-          
-          <div class="contact-info">
-            <div>E-mail : Vegetables@aaabbccc.com</div>
-            <div>PHONE : +886-123-456-789</div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
-
-    <!-- 頁尾版權 -->
-    <footer class="footer">
-      Copyrights 2017 Vegetables cise / Design by Vegetables
-    </footer>
   </div>
 
+  <footer class="site-footer">Copyrights 2017 Vegetables slice / Design by Vegetables</footer>
 </body>
 </html>
