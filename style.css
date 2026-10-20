@@ -1,172 +1,268 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+
+html {
+  min-width: 320px;
+  background: #edf2c5;
 }
 
 body {
-  background-color: #EDF2C5;
-  font-family: 'Noto Sans', sans-serif;
-  color: #7D7D7D;
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
+  zoom: 1.2;
+  margin: 0;
+  color: #858585;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 
-.container {
-  width: 1000px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-/* 頂部標題與按鈕 */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 12px;
+.page-shell {
+  width: min(560px, calc(100% - 40px));
+  margin: 0 auto;
 }
 
-.logo {
-  font-size: 38px;
-  font-weight: 900;
-  color: #778A50;
+.site-header {
+  padding-top: 21px;
 }
 
-.user-actions {
+.brand-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  min-height: 30px;
+  margin-bottom: 2px;
 }
 
-.social {
-  font-weight: bold;
-  color: #778A50;
-  font-size: 14px;
-  cursor: pointer;
+.wordmark {
+  color: #778b4f;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
 }
 
-.btn-outline {
-  background: transparent;
-  border: 1px solid #778A50;
-  color: #778A50;
-  padding: 2px 8px;
-  font-size: 11px;
-  font-weight: bold;
+.account-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #778b4f;
+}
+
+.social-icon {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+  background: #778b4f;
+  color: #f4f7dc;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.instagram span {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #f4f7dc;
   border-radius: 2px;
-  cursor: pointer;
+  position: relative;
 }
 
-/* 導覽列 */
-.navbar {
-  background-color: #778A50;
-  display: flex;
-  gap: 32px;
-  padding: 10px 24px;
-}
-
-.nav-item {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-/* 主大圖 */
-.banner {
-  width: 100%;
-  margin-top: 2px;
-  margin-bottom: 24px;
-}
-
-.banner img {
-  width: 100%;
-  display: block;
-}
-
-/* 雙欄主內容區塊 */
-.content-row {
-  display: flex;
-  gap: 24px;
-  align-items: stretch;
-}
-
-.card-box {
-  flex: 1;
-  background-color: #F7FBDA;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-header {
-  background-color: #778A50;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 8px 16px;
-}
-
-.card-body {
-  padding: 20px;
-  flex: 1;
-}
-
-/* 左側三欄蔬菜排列 */
-.veg-gallery {
-  display: flex;
-  gap: 16px;
-}
-
-.veg-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.veg-item img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-}
-
-.veg-item p {
-  font-size: 12px;
-  line-height: 1.5;
-  color: #7D7D7D;
-}
-
-/* 右側 Contact 文字排版 */
-.contact-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-text {
-  font-size: 12px;
-  line-height: 1.5;
-  color: #7D7D7D;
-  flex: 1;
-}
-
-.contact-divider {
+.instagram span::after {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 1px;
   height: 1px;
-  background-color: #cbd5a2;
-  margin: 16px 0 10px 0;
+  border-radius: 50%;
+  background: #f4f7dc;
+  content: "";
 }
 
-.contact-info {
-  font-size: 12px;
+.link-divider {
+  width: 1px;
+  height: 15px;
+  margin: 0 1px 0 3px;
+  background: #778b4f;
+}
+
+.small-button {
+  padding: 3px 6px 2px;
+  border: 1px solid #9aab71;
+  border-radius: 3px;
+  font-size: 7px;
   font-weight: 700;
-  color: #7D7D7D;
-  line-height: 1.6;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
-/* 頁尾 */
-.footer {
-  background-color: #778A50;
-  color: #EDF2C5;
-  font-size: 11px;
+.main-nav {
+  display: flex;
+  min-height: 22px;
+  align-items: center;
+  gap: 0;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #778b4f;
+}
+
+.main-nav a {
+  display: flex;
+  min-height: 22px;
+  align-items: center;
+  padding: 0 15px;
+  color: #f4f7df;
+  font-size: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  background: #657943;
+}
+
+.hero {
+  height: 225px;
+  margin-top: 8px;
+  background-color: #d8c517;
+  background-image: url("images/banner.png");
+  background-position: center 48%;
+  background-size: cover;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 266px 264px;
+  gap: 30px;
+  padding: 14px 0 18px;
+}
+
+.vegetables-section,
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-heading {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  margin: 0;
+  padding: 0 15px;
+  border-radius: 2px 2px 0 0;
+  background: #778b4f;
+  color: #f5f7df;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.vegetable-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  flex: 1;
+  padding: 8px 2px 0;
+}
+
+.vegetable-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.vegetable-card img {
+  display: block;
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* 三個蔬菜方塊：底色 F8FBDB、圓角、黑字 */
+.vegetable-card p {
+  flex: 1;
+  margin: 0;
+  padding: 8px 6px;
+  background: #F8FBDB;
+  border-radius: 12px;
+  font-size: 7px;
+  line-height: 1.55;
+  color: #000000;
+}
+
+/* Contact 區塊：底色 F8FBDB、圓角、灰字 */
+.contact-copy {
+  flex: 1;
+  min-height: 140px;
+  padding: 10px 8px 7px;
+  background: #F8FBDB;
+  border-radius: 12px;
+  font-size: 7px;
+  line-height: 1.55;
+  color: #7D7D7D;
+}
+
+.contact-copy p {
+  margin: 0 0 7px;
+  color: #7D7D7D;
+}
+
+.contact-copy address {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  border-top: 1px solid #c9cdb0;
+  font-style: normal;
+  line-height: 1.5;
+  color: #7D7D7D;
+}
+
+.site-footer {
+  display: flex;
+  min-height: 26px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  background: #778b4f;
+  color: #f1f4d7;
+  font-size: 7px;
   text-align: center;
-  padding: 12px 0;
-  margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+  .page-shell {
+    width: min(100% - 32px, 440px);
+  }
+
+  .hero {
+    height: clamp(150px, 40vw, 225px);
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .vegetable-card img {
+    height: clamp(72px, 22vw, 120px);
+  }
+
+  .vegetable-card p,
+  .contact-copy {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-nav {
+    justify-content: space-around;
+  }
+
+  .main-nav a {
+    padding: 0 8px;
+    font-size: 7px;
+  }
 }
